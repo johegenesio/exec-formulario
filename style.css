@@ -2,19 +2,94 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('montserrat.ttf') format('truetype');
+}
+
+/*Edge*/
+::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #00000080;
+}
+
+/*Internet Explorer 10-11*/
+:-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #00000080;
+}
+
+/*Demais naavegadores*/
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #00000080;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color: black;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    display: inline-block;
+    margin: 10px 0px;
+}
+
+.texgtField {
+    border: 1px solid #767676;
+    border-radius: 20px;
+    width: 350px;
+    height: 58px;
+    background-color: #ffffffe5;
+    padding: 20px;
+    margin: 10px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: black;
+    line-height: 20px;
+}
+
+.whitebutton {
+    width: 150px;
+    height: 58px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+
+}
+
 .fullCenter {
-    background-color: brown;
     padding: 15px;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 #formulario {
-    background-color: blue;
     width: 350px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+#sat {
+    width: 90%;
 }
